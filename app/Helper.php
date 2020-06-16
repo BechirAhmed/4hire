@@ -1268,6 +1268,10 @@ class Helper extends Model
     public static function getTranslatedLang($lang = "")
     {
         $languages = array(
+            'ar' => array(
+                'code' => 'ar',
+                'title' => 'Arabic',
+            ),
             'en' => array(
                 'code' => 'en',
                 'title' => 'English',
