@@ -15,7 +15,7 @@
             $payment_settings = \App\SiteManagement::getMetaValue('commision');
             $payment_module = !empty($payment_settings) && !empty($payment_settings[0]['enable_packages']) ? $payment_settings[0]['enable_packages'] : 'true';
             $employer_payment_module = !empty($payment_settings) && !empty($payment_settings[0]['employer_package']) ? $payment_settings[0]['employer_package'] : 'true';
-            $copyright = !empty($setting) ? $setting['copyright'] : 'Chimp Advertising All Rights Reserved';
+            $copyright = !empty($setting) ? $setting['copyright'] : 'All Rights Reserved';
         @endphp
         <div id="wt-verticalscrollbar" class="wt-verticalscrollbar">
             <div class="wt-companysdetails wt-usersidebar">
