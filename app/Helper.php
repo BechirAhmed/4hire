@@ -1716,52 +1716,20 @@ class Helper extends Model
     public static function currencyList($code = "")
     {
         $currency_array = array(
+            'MRU' => array(
+                'numeric_code'  => 929,
+                'code'          => 'MRU',
+                'name'          => 'Mauritanian Ouguiya',
+                'symbol'        => 'UM',
+                'fraction_name' => 'Khoums',
+                'decimals'      => 2
+            ),
             'USD' => array(
                 'numeric_code'  => 840,
                 'code'          => 'USD',
                 'name'          => 'United States dollar',
                 'symbol'        => '$',
                 'fraction_name' => 'Cent[D]',
-                'decimals'      => 2
-            ),
-            'AUD' => array(
-                'numeric_code'  => 36,
-                'code'          => 'AUD',
-                'name'          => 'Australian dollar',
-                'symbol'        => '$',
-                'fraction_name' => 'Cent',
-                'decimals'      => 2
-            ),
-            'BRL' => array(
-                'numeric_code'  => 986,
-                'code'          => 'BRL',
-                'name'          => 'Brazilian real',
-                'symbol'        => 'R$',
-                'fraction_name' => 'Centavo',
-                'decimals'      => 2
-            ),
-            'CAD' => array(
-                'numeric_code'  => 124,
-                'code'          => 'CAD',
-                'name'          => 'Canadian dollar',
-                'symbol'        => '$',
-                'fraction_name' => 'Cent',
-                'decimals'      => 2
-            ),
-            'CZK' => array(
-                'numeric_code'  => 203,
-                'code'          => 'CZK',
-                'name'          => 'Czech koruna',
-                'symbol'        => 'Kc',
-                'fraction_name' => 'Haléř',
-                'decimals'      => 2
-            ),
-            'DKK' => array(
-                'numeric_code'  => 208,
-                'code'          => 'DKK',
-                'name'          => 'Danish krone',
-                'symbol'        => 'kr',
-                'fraction_name' => 'Øre',
                 'decimals'      => 2
             ),
             'EUR' => array(
@@ -1772,148 +1740,12 @@ class Helper extends Model
                 'fraction_name' => 'Cent',
                 'decimals'      => 2
             ),
-            'HKD' => array(
-                'numeric_code'  => 344,
-                'code'          => 'HKD',
-                'name'          => 'Hong Kong dollar',
-                'symbol'        => '$',
-                'fraction_name' => 'Cent',
-                'decimals'      => 2
-            ),
-            'HUF' => array(
-                'numeric_code'  => 348,
-                'code'          => 'HUF',
-                'name'          => 'Hungarian forint',
-                'symbol'        => 'Ft',
-                'fraction_name' => 'Fillér',
-                'decimals'      => 2
-            ),
-            'ILS' => array(
-                'numeric_code'  => 376,
-                'code'          => 'ILS',
-                'name'          => 'Israeli new sheqel',
-                'symbol'        => '₪',
-                'fraction_name' => 'Agora',
-                'decimals'      => 2
-            ),
-            'INR' => array(
-                'numeric_code'  => 356,
-                'code'          => 'INR',
-                'name'          => 'Indian rupee',
-                'symbol'        => 'INR',
-                'fraction_name' => 'Paisa',
-                'decimals'      => 2
-            ),
-            'JPY' => array(
-                'numeric_code'  => 392,
-                'code'          => 'JPY',
-                'name'          => 'Japanese yen',
-                'symbol'        => '¥',
-                'fraction_name' => 'Sen[G]',
-                'decimals'      => 2
-            ),
-            'MYR' => array(
-                'numeric_code'  => 458,
-                'code'          => 'MYR',
-                'name'          => 'Malaysian ringgit',
-                'symbol'        => 'RM',
-                'fraction_name' => 'Sen',
-                'decimals'      => 2
-            ),
-            'MXN' => array(
-                'numeric_code'  => 484,
-                'code'          => 'MXN',
-                'name'          => 'Mexican peso',
-                'symbol'        => '$',
-                'fraction_name' => 'Centavo',
-                'decimals'      => 2
-            ),
-            'NOK' => array(
-                'numeric_code'  => 578,
-                'code'          => 'NOK',
-                'name'          => 'Norwegian krone',
-                'symbol'        => 'kr',
-                'fraction_name' => 'Øre',
-                'decimals'      => 2
-            ),
-            'NZD' => array(
-                'numeric_code'  => 554,
-                'code'          => 'NZD',
-                'name'          => 'New Zealand dollar',
-                'symbol'        => '$',
-                'fraction_name' => 'Cent',
-                'decimals'      => 2
-            ),
-            'PHP' => array(
-                'numeric_code'  => 608,
-                'code'          => 'PHP',
-                'name'          => 'Philippine peso',
-                'symbol'        => 'PHP',
-                'fraction_name' => 'Centavo',
-                'decimals'      => 2
-            ),
-            'PLN' => array(
-                'numeric_code'  => 985,
-                'code'          => 'PLN',
-                'name'          => 'Polish złoty',
-                'symbol'        => 'zł',
-                'fraction_name' => 'Grosz',
-                'decimals'      => 2
-            ),
             'GBP' => array(
                 'numeric_code'  => 826,
                 'code'          => 'GBP',
                 'name'          => 'British pound[C]',
                 'symbol'        => '£',
                 'fraction_name' => 'Penny',
-                'decimals'      => 2
-            ),
-            'SGD' => array(
-                'numeric_code'  => 702,
-                'code'          => 'SGD',
-                'name'          => 'Singapore dollar',
-                'symbol'        => '$',
-                'fraction_name' => 'Cent',
-                'decimals'      => 2
-            ),
-            'SEK' => array(
-                'numeric_code'  => 752,
-                'code'          => 'SEK',
-                'name'          => 'Swedish krona',
-                'symbol'        => 'kr',
-                'fraction_name' => 'Öre',
-                'decimals'      => 2
-            ),
-            'CHF' => array(
-                'numeric_code'  => 756,
-                'code'          => 'CHF',
-                'name'          => 'Swiss franc',
-                'symbol'        => 'Fr',
-                'fraction_name' => 'Rappen[I]',
-                'decimals'      => 2
-            ),
-            'TWD' => array(
-                'numeric_code'  => 901,
-                'code'          => 'TWD',
-                'name'          => 'New Taiwan dollar',
-                'symbol'        => '$',
-                'fraction_name' => 'Cent',
-                'decimals'      => 2
-            ),
-            'THB' => array(
-                'numeric_code'  => 764,
-                'code'          => 'THB',
-                'name'          => 'Thai baht',
-                'symbol'        => '฿',
-                'fraction_name' => 'Satang',
-                'decimals'      => 2
-            ),
-            'RUB' => array(
-                'numeric_code'  => 643,
-                'code'          => 'RUB',
-                'name'          => 'Russian ruble',
-                'symbol'        => 'руб.',
-                'fraction_name' => 'Kopek',
                 'decimals'      => 2
             ),
         );
@@ -2305,7 +2137,7 @@ class Helper extends Model
     public static function getTextDirection()
     {
         $language = \App::getLocale();
-        $lang_array = ['ur'];
+        $lang_array = ['ar'];
         $textdir = 'ltr';
         if (in_array($language, $lang_array)) {
             $textdir = 'rtl';

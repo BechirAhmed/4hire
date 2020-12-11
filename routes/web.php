@@ -55,6 +55,8 @@ Route::get(
 )->name('home');
 
 
+Route::get('change_locale/{locale}', 'HomeController@changeLocale')->name('change_locale');
+
 Route::get('articles/{category?}', 'ArticleController@articlesList')->name('articlesList');
 Route::get('article/{slug}', 'ArticleController@showArticle')->name('showArticle');
 Route::get('profile/{slug}', 'PublicController@showUserProfile')->name('showUserProfile');

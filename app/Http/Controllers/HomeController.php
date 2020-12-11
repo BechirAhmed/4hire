@@ -189,4 +189,23 @@ class HomeController extends Controller
     {
         //
     }
+
+    public function changeLocale(Request $request)
+    {
+        if (request('locale')) {
+            session()->put('language', request('locale'));
+            $language = request('locale');
+        } elseif (session('language')) {
+            $language = session('language');
+        } elseif (config('app.locale')) {
+            $language = config('app.locale');
+        }
+
+        if (isset($language)) {
+            app()->setLocale($language);
+        }
+
+        return redirect()->back();
+    }
+    
 }
